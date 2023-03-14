@@ -5,7 +5,7 @@
       <ns-navbar :is-back="!1" :background="bgNav" :title-color="textNavColor" :border-bottom="false" :globalS="diyData.global" z-index="1001" :type="index" type="index" ref="topNav"></ns-navbar>
     </view>
     <!-- #endif -->
-    <icon-kf />
+    <!-- <icon-kf emitKf /> -->
     <diy-index-page ref="indexPage" :value="topIndexValue" :minHeight="minHeight" :scrollHeight="scrollHeight" :scrollTopHeight="scrollTopHeight" :bgUrl="bgUrl" v-if="topIndexValue">
       <diy-group :diyData="diyData" :siteId="siteId" v-if="diyData.value" :height="scrollTopHeight"></diy-group>
       <view class="padding-bottom"><ns-copyright></ns-copyright></view>

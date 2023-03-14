@@ -1,13 +1,25 @@
 <template>
   <!-- 客服 -->
-  <button class="vkefu" open-type="contact" bindcontact="handleContact" session-from="sessionFrom"><text>客服</text></button>
+  <button v-if="emitKf" class="vkefu" @click="handleClickF"><text>客服</text></button>
+  <button v-else class="vkefu" open-type="contact" bindcontact="handleContact" session-from="sessionFrom"><text>客服</text></button>
 </template>
 
 <script>
 export default {
+  props: {
+    emitKf: {
+      type: Boolean,
+      default: false,
+    },
+  },
   name: 'icon-kf',
   data() {
     return {};
+  },
+  methods: {
+    handleClickF() {
+      this.$emit('openKf');
+    },
   },
 };
 </script>

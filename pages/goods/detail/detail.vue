@@ -591,7 +591,7 @@
     </ns-goods-action>
     <to-top v-if="showTop" @toTop="scrollToTopNative()"></to-top>
 
-    <icon-kf />
+    <icon-kf @openKf="goConnect" emitKf />
   </view>
 </template>
 

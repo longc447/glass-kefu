@@ -3,9 +3,9 @@
  */
 const x = {
   // baseUrl: 'https://jqh.tongzhounetwork.ltd',
-  baseUrl: 'https://feifeng.tongzhounetwork.ltd',
-  imgDomain: 'https://feifeng.tongzhounetwork.ltd',
-  h5Domain: 'https://feifeng.tongzhounetwork.ltd/h5',
+  baseUrl: 'https://zhenshi.tongzhounetwork.ltd',
+  imgDomain: 'https://zhenshi.tongzhounetwork.ltd',
+  h5Domain: 'https://zhenshi.tongzhounetwork.ltd/h5',
   mpKey: 'IB7BZ-4BMCD-43J4O-HS2HW-DZSGF-LGBHX',
   //小程序appid wx0f57e059962fab6a
 }
@@ -21,7 +21,7 @@ const globalConfig = {
 }
 let param = {
   //客服地址
-  webSocket: '',
+  webSocket: 'wss://zhenshi.tongzhounetwork.ltd/wss',
   //本地端主动给服务器ping的时间, 0 则不开启 , 单位秒 
   pingInterval: 1500,
   // 超时时间 超出时间段将重连系统 单位秒
