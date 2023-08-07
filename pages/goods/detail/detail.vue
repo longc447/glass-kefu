@@ -108,14 +108,13 @@
 
         <view class="newdetail margin-bottom">
           <!-- 已选规格 -->
-          <view class="item selected-sku-spec" v-if="goodsSkuDetail.sku_spec_format" @click="joinCart">
+          <!-- <view class="item selected-sku-spec" v-if="goodsSkuDetail.sku_spec_format" @click="joinCart">
             <view class="label">选择</view>
             <view class="box">
               <text v-for="(item, index) in goodsSkuDetail.sku_spec_format" :key="index">{{ item.spec_name }}/{{ item.spec_value_name }}</text>
             </view>
             <text class="iconfont iconright"></text>
-            <!-- <view class="img-wrap"><image :src="$util.img('upload/uniapp/goods/detail_more.png')" mode="aspectFit" /></view> -->
-          </view>
+          </view> -->
           <view class="item coupon" v-if="preview == 0 && couponList.length" @click="openCouponPopup()">
             <view class="label">领券</view>
             <view class="coupon-list">

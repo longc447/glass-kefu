@@ -119,13 +119,15 @@
     created() {
       this.getCategoryList();
 
-      eventBus.$on("open", () => {
-        this.toListDetail(this.$store.state.list_second_id);
-        this.$$nextTick(() => {
-          this.showCate(this.$store.state.list_third_id)
-        })
-        console.warn("open 了咯")
-      })
+      // eventBus.$on("open", () => {
+      //   this.toListDetail(this.$store.state.list_second_id);
+        
+      //   this.$nextTick(() => {
+      //     this.showCate(this.$store.state.list_third_id)
+      //     // this.current = [];
+      //   })
+      //   console.warn("open 了咯")
+      // })
 
     },
     computed: {
@@ -268,19 +270,20 @@
   @import '@/components/diy-goods-level-category/diy-goods-level-category.scss';
 
   .twoScroll-list {
-    padding: 0 34rpx;
+    // padding: 0 34rpx;
     overflow: hidden;
 
     .twoScroll-item {
-      margin: 0 60rpx 40rpx 0;
-      width: 114rpx;
+      // margin: 0 60rpx 40rpx 0;
+      // width: 114rpx;
+      width: calc(100% / 3);
       display: inline-block;
       text-align: center;
       line-height: 1;
 
       .twoScroll-item-image {
-        width: 114rpx;
-        height: 114rpx;
+        width: 100%;
+        height: 228rpx;
         margin-bottom: 20rpx;
       }
 

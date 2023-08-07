@@ -260,7 +260,7 @@
 						keywords: 'USER_WITHDRAWAL_SUCCESS'
 					},
 					success: res => {
-						if (res.data.length) {
+						if (res.code == 0 && res.data.length) {
 							uni.requestSubscribeMessage({
 								tmplIds: res.data,
 								fail: res => {
@@ -270,6 +270,8 @@
 									callback();
 								}
 							});
+						}else{
+							callback();
 						}
 					},
 					fail: res => {

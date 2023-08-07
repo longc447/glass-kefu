@@ -1,11 +1,20 @@
+/*
+ * @Author: 楚 35090745+longc447@users.noreply.github.com
+ * @Date: 2022-11-14 17:34:50
+ * @LastEditors: 楚 35090745+longc447@users.noreply.github.com
+ * @LastEditTime: 2023-03-22 10:51:39
+ * @FilePath: /glass-kf/common/js/config.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 /**
  * 镜片一站式采购平台
  */
+const name = 'https://zhenshi.tongzhounetwork.ltd'
 const x = {
   // baseUrl: 'https://jqh.tongzhounetwork.ltd',
-  baseUrl: 'https://zhenshi.tongzhounetwork.ltd',
-  imgDomain: 'https://zhenshi.tongzhounetwork.ltd',
-  h5Domain: 'https://zhenshi.tongzhounetwork.ltd/h5',
+  baseUrl: name,
+  imgDomain: name,
+  h5Domain: name + '/h5',
   mpKey: 'IB7BZ-4BMCD-43J4O-HS2HW-DZSGF-LGBHX',
   //小程序appid wx0f57e059962fab6a
 }
